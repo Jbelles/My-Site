@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "jarretdreamingblue@gmail.com"
+  default from: "ENV['SENDGRID_USERNAME']"
 
     def new_pin_email(user)
     @user = user
