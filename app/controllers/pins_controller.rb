@@ -19,7 +19,6 @@ class PinsController < ApplicationController
   def create
     @pin = current_user.pins.build(pin_params)
     if @pin.save
-      UserMailer.new_pin_email(@pin.user).deliver
       redirect_to @pin, notice: 'Pin was successfully created.'
 
     else
