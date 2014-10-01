@@ -9,3 +9,14 @@
        </p>
   <% end %>  
 </div>
+
+<div class="jumbotron center">
+<h1>About Me!</h1>
+</div>
+<div class ="jumbotron">
+<p>I'm currently a third year student at the University of California Santa Cruz and this whole site is my attempt to learn some web design!</br>
+I'm currently hosting this site through heroku (if that isn't already obvious in the domain) with all images being hosted through Amazon S3 since heroku doesn't deal with that stuff.</br>
+Anyway here's a link to my
+<%= link_to "Resume", "https://docs.google.com/document/d/1wfe6yJcuZrGAj1vgRgJ8VRaIJy2MKjIWILTBXCWoSb0/edit?usp=sharing", data: { confirm: "This will leave the current site, are you sure you wish to continue?" }, class: "btn btn-primary" %> on google docs if you are interested.</p>
+<p>Also, if you wanted to look through the code of the site itself here's the entire thing up on <%= link_to "Github", "https://github.com/Jbelles/My-Site", data: {confirm:"This will leave the current site, are you sure you wish to continue?" }, class: "btn btn-primary" %></p>
+</div>
